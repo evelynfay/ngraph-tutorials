@@ -252,7 +252,7 @@ Debugging
 =========
 
 If you encounter any problems with this tutorial, please submit a ticket to our
-`issues <_issues_>`_ page on GitHub.
+`issues <issues_>`_ page on GitHub.
 
 .. _onnx_model_zoo: https://github.com/onnx/models
 .. _python_api: https://github.com/NervanaSystems/ngraph/blob/master/python/README.md
