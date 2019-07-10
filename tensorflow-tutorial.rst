@@ -19,21 +19,21 @@ Build and install nGraph
 Software requirements
 ---------------------
 
-+--------------------------+----------------------+
-| Using pre-built packages | Building from source | 
-+==========================+======================+
-| Python\* 3               | Python 3             |
-+--------------------------+----------------------+
-| OpenCL\* runtime 		   | OpenCL runtime       |
-+--------------------------+----------------------+
-| TensorFlow   v1.14       | Bazel\* 0.25.2       |
-+--------------------------+----------------------+
-|       | GCC 4.8 (Ubuntu\*), Clang/LLVM (macOS\*)|
-+--------------------------+----------------------+
-|                       | ``cmake`` 3.4 or higher |
-+--------------------------+----------------------+
-|                          | ``virtualenv`` 16.0  |
-+--------------------------+----------------------+
++--------------------------+-----------------------------------------+
+| Using pre-built packages | Building from source                    |
++==========================+=========================================+
+| Python\* 3               | Python 3                                |
++--------------------------+-----------------------------------------+
+| OpenCL\* runtime         | OpenCL runtime                          |
++--------------------------+-----------------------------------------+
+| TensorFlow   v1.14       |`Bazel <bazel_>`_ 0.25.2                 |
++--------------------------+-----------------------------------------+
+|                          | GCC 4.8 (Ubuntu\*), Clang/LLVM (macOS\*)|
++--------------------------+-----------------------------------------+
+|                          | ``cmake`` 3.4 or higher                 |
++--------------------------+-----------------------------------------+
+|                          | ``virtualenv`` 16.0                     |
++--------------------------+-----------------------------------------+
 
 `OpenCL runtime <opencl_runtime_>`_ is required only if you plan to use nGraph
 with an Intel GPU backend.
@@ -61,9 +61,10 @@ Install TensorFlow:
 
     pip install -U tensorflow==1.14.0
 
-Install `ngraph-tensorflow-bridge`:
+Install ``ngraph-tensorflow-bridge``:
 
 ::
+
     pip install -U ngraph-tensorflow-bridge
 
 Build from source
@@ -74,15 +75,12 @@ build nGraph bridge from source.
 
 .. note:: The requirements for building nGraph bridge are identical to the
    requirements for building TensorFlow from source. For more information,
-   review the [TensorFlow configuration] details. 
+   review the `TensorFlow configuration <tensorflow_configuration_>`_ details. 
 
-Prepare you build environment
-*****************************
+
+**Prepare you build environment**
 
 Install the following requirements before building ``nGraph-bridge``. 
- 
-.. note:: TensorFlow uses a build system called "bazel". For the current
-   version of `bazel`, use `bazel version <bazel_version_>`_.
 
 Install ``bazel``:
 
@@ -101,8 +99,7 @@ bazel:
 
 Install ``cmake``, ``virtualenv``, and ``gcc 4.8``.
 
-Build an nGraph bridge
-**********************
+**Build an nGraph bridge**
 
 Once TensorFlow's dependencies are installed, clone the ``ngraph-bridge`` repo:
 
@@ -337,7 +334,7 @@ For debugging run time issues, see the instructions provided in the
 .. _nGraph_bridge: https://github.com/tensorflow/ngraph-bridge.git
 .. _Opencl_runtime: https://software.intel.com/en-us/articles/opencl-drivers
 .. _tensorflow_configuration: https://www.tensorflow.org/install/source
-.. _bazel_version: https://github.com/bazelbuild/bazel/releases/tag/0.25.2
+.. _bazel: https://github.com/bazelbuild/bazel/releases/tag/0.25.2
 .. _frozen_model: https://www.tensorflow.org/guide/extend/model_files#freezing
 .. _image_recognition_demo: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/label_image
 .. _nGraph_tensorflow_examples: https://github.com/tensorflow/ngraph-bridge/tree/master/examples
