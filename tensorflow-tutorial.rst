@@ -275,8 +275,7 @@ CPU backend, add the following option:
 
 Where ``<num_cores>`` equals the number of cores in your processor. 
 
-Measure the time
-~~~~~~~~~~~~~~~~
+**Measure the time**
 
 nGraph is a Just In Time (JIT) compiler, meaning that the TensorFlow
 computation graph is compiled to nGraph during the first instance of the
