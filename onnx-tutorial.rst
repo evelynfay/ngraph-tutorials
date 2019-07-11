@@ -23,8 +23,7 @@ Software requirements
 - Protocol Buffers (protobuf) ``v.2.6.1`` or higher
 - `OpenCL runtime <opencl_drivers_>`_, required if you plan to use nGraph with an Intel GPU backend
 
-Install protobuf for Ubuntu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Install protobuf for Ubuntu**
 
 ::
 
