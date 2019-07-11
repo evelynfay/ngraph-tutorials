@@ -167,7 +167,7 @@ In your Python virtual environment, install the required packages and
     (nGraph) $ pip install -r requirements_test.txt
     (nGraph) $ pip install -e .
  
-**Verify installation of ``ngraph-onnx``** 
+**Verify installation of** ``ngraph-onnx`` 
 
 To verify that ``ngraph-onnx`` installed correctly, you can run our test suite
 using:
