@@ -158,8 +158,7 @@ respectively.
 Select the help option of ``build_ngtf.py`` script to learn more about various
 build options and how to build other backends. 
 
-Verify installation
-~~~~~~~~~~~~~~~~~~~
+**Verify installation of** ``ngraph-bridge``
 
 To verify that ``ngraph-bridge`` installed correctly, use:
 
