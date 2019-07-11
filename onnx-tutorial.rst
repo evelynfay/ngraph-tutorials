@@ -243,8 +243,7 @@ Execute your model by calling the created ``Computation`` object with input data
 	         7.45318757e-05, 4.80892748e-04, 5.67404088e-04, 9.48728994e-05,
 	         ...
 
-Intel GPU
-~~~~~~~~~
+**Run the computation on an Intel GPU**
 
 For running the computation on an Intel GPU, use the following line to create
 the runtime:  
