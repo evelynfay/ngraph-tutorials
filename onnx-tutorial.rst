@@ -114,8 +114,8 @@ Build a Python package (Binary wheel) for nGraph:
 For additional information on how to build nGraph Python bindings see the
 `Python API documentation <python_api_>`_.
 
-Install nGraph
-~~~~~~~~~~~~~~
+**Install nGraph**
+
 Once the Python binary wheel file ``ngraph-*.whl`` is prepared, install it using
 pip. For example:
 
