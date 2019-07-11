@@ -55,8 +55,7 @@ Install `ngraph-onnx`:
 Build from source
 -----------------
 
-Build nGraph with Python bindings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Build nGraph with Python bindings**
 
 Complete the following steps to build nGraph with Python bindings from source.
 These steps have been tested on Ubuntu 18.04.
@@ -124,10 +123,9 @@ pip. For example:
 
     (nGraph) $ pip install -U dist/ngraph_core-0.0.0.dev0-cp36-cp36m-linux_x86_64.whl
 
-Verify installation
->>>>>>>>>>>>>>>>>>>
+**Verify installation of nGraph**
 
-Check that nGraph is properly installed in your Python shell:
+To verify that nGraph is properly installed in your Python shell:
 
 .. code-block:: python
 
@@ -144,8 +142,7 @@ both built with the ``NGRAPH_ONNX_IMPORT_ENABLE`` option:
 
 If you don't see any errors, nGraph should be installed correctly.
 
-Install ngraph-onnx
-~~~~~~~~~~~~~~~~~~~
+**Install ngraph-onnx**
 
 ``ngraph-onnx`` is an additional Python library that provides a Python API to run
 ONNX models using nGraph. 
@@ -169,9 +166,8 @@ In your Python virtual environment, install the required packages and
     (nGraph) $ pip install -r requirements.txt
     (nGraph) $ pip install -r requirements_test.txt
     (nGraph) $ pip install -e .
-    
-Verify installation
->>>>>>>>>>>>>>>>>>>
+ 
+**Verify installation of ``ngraph-onnx``** 
 
 To verify that ``ngraph-onnx`` installed correctly, you can run our test suite
 using:
