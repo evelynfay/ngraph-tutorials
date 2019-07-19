@@ -286,17 +286,17 @@ Add the following Python code to measure the computation time:
 
 .. code-block:: python
 
-	# Warmup
-	sess.run(output_operation.outputs[0], {
-	        input_operation.outputs[0]: t})
-	# Run
-	import time
-	start = time.time()
-	results = sess.run(output_operation.outputs[0], {
-	        input_operation.outputs[0]: t
-	        })      
-	elapsed = time.time() - start
-	print('Time elapsed: %f seconds' % elapsed)
+    # Warmup
+    sess.run(output_operation.outputs[0], {
+            input_operation.outputs[0]: t})
+    # Run
+    import time
+    start = time.time()
+    results = sess.run(output_operation.outputs[0], {
+            input_operation.outputs[0]: t
+            })      
+    elapsed = time.time() - start
+    print('Time elapsed: %f seconds' % elapsed)
 
 Observe that the ouput time runs faster than TensorFlow native (without
 nGraph).
