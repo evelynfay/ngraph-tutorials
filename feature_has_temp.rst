@@ -1,8 +1,6 @@
----
 title: Feature Title
-author: Your Name
-...
 
+author: Your Name
 
 .. contents::
 
