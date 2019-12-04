@@ -3,7 +3,11 @@ title: Feature Title
 author: Your Name
 ...
 
-# References
+
+.. contents::
+
+References
+==========
 
 [Feature Title](https://hsdes.intel.com/appstore/article/#/12345678/main)
 
@@ -21,55 +25,71 @@ BIOS Stakeholder     	 TBD
 Platform Stakeholder 	 TBD
 ```
 
-# Summary
+Summary
+=======
 
 The feature HAS is intended to cover the entire set of details surrounding a new product feature.  It covers all levels of change from global (customer visible) architecture to firmware and design / RTL definition.  It is expected to be maintained throughout the project and acts as a single source for documentation of a specific feature.
 
 Documentation is a collaborative effort.  Each group will contribute to the document and those contributions will be reviewed and ratified at checkpoints.
 
-## Motivation
+Motivation
+----------
 
 * Problem statement and motivation for adding this feature
 * Include links to any data that would motivate the feature
     * place docs in `./assets`
 
-# Feature Details
+Feature Details
+===============
 
-# Firmware
+Firmware
+========
 
 Document firmware changes.  If multiple
 
-## Instruction cost estimate
+Instruction cost estimate
+-------------------------
 
-# Unit1 Hardware (e.g., Punit)
-
-Summarize the unit impact
-
-# Unit2 Hardware (e.g., Display)
+Unit1 Hardware (e.g., Punit)
+============================
 
 Summarize the unit impact
 
-# Global Flows
+Unit2 Hardware (e.g., Display)
+==============================
 
-## Reset Entry / Exit
+Summarize the unit impact
+
+Global Flows
+============
+
+Reset Entry / Exit
+------------------
 
 Warm and cold
 
-## Package C-states
+Package C-states
+----------------
 
-### C6
+C6
+~~
 
-### C7
+C7
+~~
 
-### C8
+C8
+~~
 
-### C9 - C10
+C9 - C10
+~~~~~~~~
 
-## S3
+S3
+--
 
 Populate this section as needed.  If there are any changes to cross-unit communication, document those here
 
-# Fuses
+Fuses
+=====
 
 Document all fuses required for this feature.  Documentation should follow standard fuse template
 
@@ -88,7 +108,8 @@ Fuse value   LLC Size per slice (Enabled ways per slice) </description>
     </fusebit>
 ```
 
-# Debug and Telemetry
+Debug and Telemetry
+===================
 
 Document any details for DFX here
 
@@ -103,7 +124,8 @@ Document any details for DFX here
 * Is there a debug mode where the feature may be disabled, and if not what is our risk mitigation strategy?
 * If the feature targets some condition that is hard to hit, what DFX is being added so that we can test it?
 
-# Firmware Trace Messages
+Firmware Trace Messages
+=======================
 
 Document trace message XML here
 
@@ -131,7 +153,8 @@ Document trace message XML here
 </message>
 ```
 
-# Area
+Area
+====
 
 For every firmware agent or unit affected, document the cost in area or firmware instructions
 
@@ -141,18 +164,21 @@ Pcode         	 100 instructions
 Punit         	 negligible area
 ```
 
-# Power Delivery
+Power Delivery
+==============
 
 Does this feature add any requirements to change power delivery
 
 * Impact to peak current for specific rails?
 * Power state table updates
 
-# KPI Impact
+KPI Impact
+==========
 
 * Product value statement
 
-# Manufacturing
+Manufacturing
+=============
 
 Document any support required of HVM.  This could include:
 
@@ -161,62 +187,77 @@ Document any support required of HVM.  This could include:
     * E.g., Cdyn characterization
 * CMV test and correlation
 
-# Quality and Reliability
+Quality and Reliability
+=======================
 
 * Will this feature have any impact on Q&R?  Does it affect silicon wearout (high temp, high voltage) and if so, what is our plan to assess its impact?
 
-# Silicon Characterization
+Silicon Characterization
+========================
 
 * What sort of power and performance tasks are required to tune this feature
 * Can we test with this feature on vs. off to evaluate its success?
 
-# Configuration
+Configuration
+=============
 
 * To enable or test this feature, what is needed to be set?  Fuses, registers, etc.
 
-# Platform
+Platform
+========
 
 * Does this feature require any platform level enabling?
 
-# Software
+Software
+========
 
 * Is any driver support required for this feature?
 * Is any OS support required for this feature?
 
-# BIOS
+BIOS
+====
 
 * Is BIOS support required?  If so, detail the requirements here.
 
-# Overclocking
+Overclocking
+============
 
 * Does this feature have any impact to overclocking?
 
-# Customer
+Customer
+========
 
 Document any relevant details regarding customer communication, engagement associated with this feature.  It may also be interesting to discuss customer feedback.
 
-# Pre-si Validation
+Pre-si Validation
+=================
 
 * Document validation plans here
 
-## Punit FW Validation Strategy
+Punit FW Validation Strategy
+----------------------------
 
-### FORE changes required for Punit FW Val
+FORE changes required for Punit FW Val
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Document FORE changes here (if any)
 
-### Punit FW Val tests/stimulus to implement
+Punit FW Val tests/stimulus to implement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Document tests/stimulus here
 * Corner cases:
     * Document corner cases here
 
-# Post-si Validation
+Post-si Validation
+==================
 
 * Document validation plans here
 
-# Bugs
+Bugs
+====
 
 Any spec bugs or gaps discovered through execution (after HAS 0.8 ratification) should be documented here and fixes to the documentation to cover the gap or enhancement identified.
 
-# Notes
+Notes
+=====
 
 As appropriate, include discussion notes below.  These notes are only valid at the point of recording them and are not a replacement for the spec defined above.
