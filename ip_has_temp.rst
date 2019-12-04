@@ -1,7 +1,7 @@
 
 title: IP PM Integration HAS
-author: Your Name
 
+author: Your Name
 
 .. contents::
 
